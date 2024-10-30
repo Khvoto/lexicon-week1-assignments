@@ -1,0 +1,151 @@
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+html {
+  background-color: grey;
+}
+
+body {
+  background-color: oldlace;
+  margin: auto;
+  position: relative;
+  width: 1024px;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+header h1 {
+  margin: 10px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header ul a {
+  align-content: center;
+  background-color: white;
+  color: darkslategray;
+  height: 60px;
+  text-align: center;
+  list-style-type: none;
+  width: 80px;
+}
+
+header ul a:visited {
+  background-color: lightslategray;
+  color: darkslategrey;
+}
+
+header ul a:hover {
+  background-color: darkslategray;
+  color: white;
+}
+
+
+main {
+  background-color: slategray;
+  height: calc(100vh - 160px);
+  padding: 20px;
+  position: relative;
+  width: calc(80% - 40px);
+}
+
+main h2 {
+  padding: 30px;
+  padding-left: 10px;
+  width: fit-content;
+}
+
+main section {
+  height: 20%;
+  padding: 10px;
+}
+
+main section h3 {
+  margin: 15px;
+  margin-left: 0;
+
+}
+
+main article {
+  display: inline-block;
+  height: 60%;
+  padding: 10px;
+  vertical-align: top;
+  width: calc(45% - 20px);
+}
+
+main article p {
+  padding: 10px 10px 10px 0;
+}
+
+main article img {
+  display: block;
+  margin: auto;
+}
+
+main article:first-of-type p:nth-of-type(2) {
+  color: blue;
+  font-weight: 600;
+}
+
+aside{
+  float: right;
+  padding: 25px;
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  width: calc(1024px/5 - 50px);
+}
+
+aside h2 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+aside ul {
+  justify-content: center;
+  list-style-type: none;
+}
+
+aside ul>li {
+    padding-bottom: 20px;
+}
+
+aside ul>li:nth-of-type(odd) {
+  color: red;
+}
+
+aside ul>li:nth-last-of-type(odd)>ol>li:nth-child(even) {
+  color: darkred;
+}
+
+aside ul>li:nth-of-type(even) {
+  color: blue;
+}
+
+aside ul>li:nth-of-type(even)>ol>li:nth-child(odd) {
+  color: darkblue;
+}
+
+
+
+footer {
+  height: 60px;
+  align-content: center;
+  text-align: center;
+}
